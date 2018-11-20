@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:layout_margin="30dp"
+        tools:context=".JoinMember"
+        >
+    <TextView android:layout_width="match_parent" android:layout_height="match_parent"
+        android:text="회 원 가 입"
+              android:textAlignment="center"
+              android:textSize="20dp"
+              android:id="@+id/login"
+
+    />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:layout_alignTop= "@id/login"
+        android:id="@+id/TelNum">
+    <ImageView
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:id="@+id/img_TelNum"
+            android:src="@drawable/telephone"
+    />
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_TelNum"
+            android:adjustViewBounds="true"
+            android:baselineAlignBottom="false"
+            android:layout_marginLeft="10dp"
+            android:hint="핸드폰 번호를 입력해주세요"
+    />
+</LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_alignParentStart="true"
+            android:id="@+id/Name"
+            android:layout_below="@id/TelNum"
+            >
+        <ImageView
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:id="@+id/img_Name"
+                android:src="@drawable/man"
+        />
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/user_Name"
+                android:adjustViewBounds="true"
+                android:baselineAlignBottom="false"
+                android:layout_marginLeft="10dp"
+                android:hint="이름을  입력해주세요"
+                />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/date"
+        android:layout_below="@id/Name"
+    >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:id="@+id/cal"
+            android:src="@drawable/calendar"
+        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="태어난날을 선택해주세요"
+            android:baselineAlignBottom="true"
+            android:layout_marginLeft="10dp"
+        />
+
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/date_1"
+            android:layout_below="@id/Name"
+            android:layout_marginTop="19dp" android:layout_alignParentEnd="true" android:layout_marginEnd="38dp">
+        <DatePicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/datepicker"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"
+                android:layout_gravity="center"
+
+                android:layout_alignTop="@+id/date_1">
+
+        </DatePicker>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/dateRe"
+            android:layout_below="@id/date_1"
+    >
+        <ImageView
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:id="@+id/calRe"
+                android:src="@drawable/calendar"
+        />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="생일 입력"
+        android:id="@+id/birthdaybtn"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:id="@+id/birthdate"
+        android:text="생일입력 버튼을 눌러주세요"/>
+
+    </LinearLayout>
+    <LinearLayout
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/addr"
+            android:layout_below="@id/dateRe"
+    >
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="주소찾기 버튼을 눌러주세요"
+                android:id="@+id/et_address"
+                android:inputType="text"
+        />
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_address_1"
+                android:hint="주소 나머지 부분을 입력하세요"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="주소찾기"
+            android:id="@+id/button"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
