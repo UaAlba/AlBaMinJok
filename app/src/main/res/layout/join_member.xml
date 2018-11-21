@@ -107,6 +107,59 @@
     </LinearLayout>
 
 
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/date_2"
+            android:layout_below="@id/date_1"
+    >
+        <ImageView
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:id="@+id/call"
+                android:src="@drawable/calendar"
+        />
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="태어난날을 선택해주세요"
+                android:baselineAlignBottom="true"
+                android:layout_marginLeft="10dp"
+        />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/date_2"
+            android:id="@+id/addrlayout"
+    >
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_address"
+                android:inputType="text"
+                android:hint="주소를입력하세요"
+        />
+        <EditText
+                android:id="@+id/et_address_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="주소 나머지 부분을 입력하세요"
+        />
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="주소입력"
+                android:id="@+id/button"
+        />
+
+    </LinearLayout>
+
 
 
 
