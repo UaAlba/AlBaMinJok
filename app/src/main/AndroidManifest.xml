@@ -3,9 +3,11 @@
           xmlns:tools="http://schemas.android.com/tools"
           package="com.example.administrator.albaminjok">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
             android:allowBackup="true"
-            android:icon="@mipmap/ic_launcher"
+            android:icon="@drawable/ic_albamin1"
             android:label="@string/app_name"
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
@@ -14,13 +16,17 @@
         <activity android:name=".MainActivity">
         </activity>
         <activity android:name=".JoinMember">
+
+        </activity>
+        <activity android:name=".WebViewActivity">
+        </activity>
+
+        <activity android:name=".JoinMemberFirst">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
-        </activity>
-        <activity android:name=".WebViewActivity">
         </activity>
     </application>
 
